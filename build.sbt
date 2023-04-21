@@ -7,7 +7,10 @@ lazy val root = project
     name := "scala3-cross",
     version := "0.1.0",
 
-    libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test,
+    libraryDependencies ++= Seq(
+      "org.assertj" % "assertj-core" % "3.24.2",
+      "org.scalameta" %% "munit" % "0.7.29" % Test
+    ),
 
     // To make the default compiler and REPL use Dotty
     scalaVersion := scala3Version,
