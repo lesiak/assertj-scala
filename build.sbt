@@ -9,7 +9,7 @@ lazy val root = project
 
     libraryDependencies ++= Seq(
       "org.assertj" % "assertj-core" % "3.27.6",
-      "org.scalameta" %% "munit" % "0.7.29" % Test
+      "org.scalameta" %% "munit" % "1.2.0" % Test
     ),
 
     // To make the default compiler and REPL use Dotty
