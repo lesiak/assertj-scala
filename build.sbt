@@ -8,7 +8,7 @@ lazy val root = project
     version := "0.1.0",
 
     libraryDependencies ++= Seq(
-      "org.assertj" % "assertj-core" % "3.24.2",
+      "org.assertj" % "assertj-core" % "3.27.6",
       "org.scalameta" %% "munit" % "0.7.29" % Test
     ),
 
