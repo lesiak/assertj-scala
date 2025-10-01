@@ -4,7 +4,7 @@ val scala3Version = "3.3.6"
 lazy val root = project
   .in(file("."))
   .settings(
-    name := "scala3-cross",
+    name := "assertj-scala",
     version := "0.1.0",
 
     libraryDependencies ++= Seq(
