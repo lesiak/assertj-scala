@@ -4,7 +4,7 @@ import scala.jdk.CollectionConverters._
 
 import org.assertj.core.api.AbstractMapAssert
 
-class ScalaMapAssert[K <: AnyRef, V <: AnyRef](actual: Map[K, _ <: V])
+class ScalaMapAssert[K, V](actual: Map[K, _ <: V])
     extends AbstractMapAssert[
       ScalaMapAssert[K, V],
       java.util.Map[K, V],

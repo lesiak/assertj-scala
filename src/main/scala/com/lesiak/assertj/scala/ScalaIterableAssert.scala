@@ -1,11 +1,11 @@
 package com.lesiak.assertj.scala
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 import org.assertj.core.api.{AbstractIterableAssert, ObjectAssert, ObjectAssertFactory}
 import org.assertj.core.util.IterableUtil
 
-class ScalaIterableAssert[T <: AnyRef](actual: Iterable[_ <: T])
+class ScalaIterableAssert[T](actual: Iterable[_ <: T])
   extends AbstractIterableAssert[
     ScalaIterableAssert[T],
     java.lang.Iterable[_ <: T],

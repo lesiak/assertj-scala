@@ -4,7 +4,7 @@ import scala.jdk.OptionConverters.RichOption
 
 import org.assertj.core.api.AbstractOptionalAssert
 
-class ScalaOptionAssert[T <: AnyRef](actual: Option[T])
+class ScalaOptionAssert[T](actual: Option[T])
   extends AbstractOptionalAssert[
     ScalaOptionAssert[T],
     T
