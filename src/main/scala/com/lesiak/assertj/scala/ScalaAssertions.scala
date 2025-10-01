@@ -8,4 +8,8 @@ object ScalaAssertions extends Assertions {
     new ScalaIterableAssert[V](iterable)
   }
 
+  def assertThat[V <: AnyRef](option: Option[V]): ScalaOptionAssert[V] = {
+    new ScalaOptionAssert[V](option)
+  }
+
 }
